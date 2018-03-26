@@ -1,0 +1,17 @@
+name:                bench-queues
+version:             0.0.0.0
+license:             BSD3
+license-file:        LICENSE
+author:              Bas van Dijk
+maintainer:          v.dijk.bas@gmail.com
+category:            Testing
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+executable bench-queues
+  main-is:             Main.hs
+  other-modules:       MisoQueue, CriterionStub
+  build-depends:       base, containers, stm, criterion, time
+  hs-source-dirs:      src
+  default-language:    Haskell2010
